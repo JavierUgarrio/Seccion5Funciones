@@ -24,7 +24,7 @@ public class Funciones {
         System.out.println("la suma es "+ sumarR(21,2));
         System.out.println(saludarR("Joselito"));
         cuentaRegresiva(10);
-        System.out.println(sumarEnteros(1,6,7));
+        System.out.println(sumarEnteros("Jose javier ",1,6,7));
         
         //llamar Metodo
         Funciones s = new Funciones();
@@ -68,8 +68,8 @@ public class Funciones {
             System.out.println("llego hasta 0");
         }
     }
-    //envio de argumentos indefinidos
-    static int sumarEnteros(int ... num1){
+    //envio de argumentos indefinidos, OJO si añadimos otros tipos de datos, hay que añadirlos al inicio, ya que los parametros indefinidos van al final 
+    static int sumarEnteros(String nombre, int ... num1){
         int suma = 0;
         for (int numeros: num1){
             suma += numeros;
