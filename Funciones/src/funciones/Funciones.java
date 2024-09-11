@@ -23,6 +23,7 @@ public class Funciones {
         System.out.println("la suma es "+  sumarRr);
         System.out.println("la suma es "+ sumarR(21,2));
         System.out.println(saludarR("Joselito"));
+        cuentaRegresiva(10);
         
         //llamar Metodo
         Funciones s = new Funciones();
@@ -50,6 +51,21 @@ public class Funciones {
     
     static int sumarR(int num1, int num2){
         return num1+num2;
+    }
+    
+    //sobrecarga de funciones
+    static double sumar(double num1, double num2){
+        return num1+num2; 
+    }
+    //funciones recursivas, son funciones que se ejecutan por si mismas    
+    static void cuentaRegresiva(int num1){
+        num1--;
+        if(num1>0){
+            System.out.println(num1);
+            cuentaRegresiva(num1);
+        }else{
+            System.out.println("llego hasta 0");
+        }
     }
     
     // Definir un metodo
