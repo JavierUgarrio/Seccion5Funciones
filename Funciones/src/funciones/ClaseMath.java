@@ -31,5 +31,11 @@ public class ClaseMath {
         
         //Redondeo
         System.out.println((int) Math.round(5.882));
+    
+    /*
+        Para mas informacion sobre el Math
+        https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/Math.html
+    */
+    
     }
 }
