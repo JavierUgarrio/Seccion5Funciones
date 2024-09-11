@@ -45,5 +45,15 @@ public class ClaseString {
             https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/lang/String.html
         */
         
+        /*
+            Crea un objeto StringBuilder: StringBuilder es una clase que se usa para construir y manipular cadenas de texto de manera eficiente
+        
+            Utilidad: StringBuilder es útil cuando necesitas construir o modificar cadenas de texto en un bucle o en una serie de operaciones porque es más eficiente que usar concatenación de strings repetidamente, que puede ser más lenta y consumir más memoria.
+        */
+        StringBuilder nuevo = new StringBuilder();
+        System.out.println(nuevo);
+        nuevo.append("hola");
+        nuevo.append("Mundo");
+        System.out.println(nuevo.toString());
     }
 }
