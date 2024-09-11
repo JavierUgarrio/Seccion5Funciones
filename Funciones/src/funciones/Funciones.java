@@ -15,6 +15,27 @@ public class Funciones {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        //llamar Funcion
+            saludar("Javier");
+        
+        //llamar Metodo
+        Funciones s = new Funciones();
+        s.myMetodo("Hola Mundo");
+        
     }
+    /*
+        Definir una funcion
+        void, significa que va retonar
+    */
+    static void saludar(String nombre){
+        System.out.println("Hola " + nombre + " desde la funcion");
+    }
+    
+    // Definir un metodo
+    public void myMetodo(String saludo){
+        System.out.println(saludo);
+    }
+    
     
 }
