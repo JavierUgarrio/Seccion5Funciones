@@ -17,7 +17,8 @@ public class Funciones {
         // TODO code application logic here
         
         //llamar Funcion
-            saludar("Javier");
+        saludar("Javier");
+        sumar(1,2);
         
         //llamar Metodo
         Funciones s = new Funciones();
@@ -27,9 +28,15 @@ public class Funciones {
     /*
         Definir una funcion
         void, significa que va retonar
+        los parametros son los datos que se envian a la funcion
     */
     static void saludar(String nombre){
         System.out.println("Hola " + nombre + " desde la funcion");
+    }
+    
+    static void sumar(int num1, int num2){
+        int suma = num1 + num2;
+        System.out.println("la suma total es: " + suma);
     }
     
     // Definir un metodo
